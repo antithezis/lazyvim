@@ -10,16 +10,6 @@ return {
       { "nvim-lua/popup.nvim" },
       { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
     },
-    keys = {
-      {
-        --FIX code actions
-        "<leader>cch",
-        function()
-          require("CopilotChat.code_actions").show_help_actions()
-        end,
-        desc = "Show help actions",
-      },
-    },
     opts = {
       debug = false,
     },
