@@ -3,6 +3,31 @@ return {
     "github/copilot.vim",
   },
   {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      { "github/copilot.vim" },
+      { "nvim-telescope/telescope.nvim" },
+      { "nvim-lua/popup.nvim" },
+      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+    },
+    keys = {
+      {
+        --FIX code actions
+        "<leader>cch",
+        function()
+          require("CopilotChat.code_actions").show_help_actions()
+        end,
+        desc = "Show help actions",
+      },
+    },
+    opts = {
+      debug = false, -- Enable debugging
+      -- See Configuration section for rest
+    },
+    -- See Commands section for default commands if you want to lazy load on them
+  },
+
+  {
     "L3MON4D3/LuaSnip",
     keys = function()
       return {}
