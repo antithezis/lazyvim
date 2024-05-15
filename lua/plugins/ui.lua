@@ -65,8 +65,8 @@ return {
           TelescopeResultsTitle = { fg = colors.grey15 },
           TelescopePreviewTitle = { fg = colors.grey16 },
 
-          LazyGitFloat = { bg = colors.grey14 },
-          LazyGitBorder = { bg = colors.grey15, fg = colors.grey15 },
+          -- LazyGitFloat = { bg = colors.grey14 },
+          -- LazyGitBorder = { bg = colors.grey15, fg = colors.grey15 },
 
           PmenuSel = { bg = colors.grey12 },
           Pmenu = { bg = colors.grey14 },
