@@ -51,7 +51,7 @@ return {
           -- NeoTreeFolderIcon = { fg = colors.grey9 },
           -- NeoTreeIndentMarker = { fg = colors.grey12 },
 
-          -- NormalFloat = { bg = colors.grey15 },
+          NormalFloat = { bg = colors.grey15 },
           -- FloatBorder = { bg = colors.bg, fg = colors.yellow },
 
           TelescopePromptPrefix = { bg = colors.grey14 }, -- Icon >
