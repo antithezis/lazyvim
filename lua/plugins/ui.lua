@@ -1,7 +1,7 @@
 return {
   {
     "catppuccin/nvim",
-    enabled = true,
+    enabled = false,
     lazy = false,
     name = "catppuccin",
     priority = 1000,
@@ -11,7 +11,7 @@ return {
   },
   {
     "rmehri01/onenord.nvim",
-    enabled = false,
+    enabled = true,
     config = function()
       local colors = require("config.utils").colors
       require("onenord").setup({
@@ -47,7 +47,7 @@ return {
           GitSignsChange = { fg = colors.orange },
           GitSignsDelete = { fg = colors.red },
 
-          NeoTreeNormal = { fg = colors.grey5, bg = colors.grey14 },
+          -- NeoTreeNormal = { fg = colors.grey5, bg = colors.grey14 },
           -- NeoTreeFolderIcon = { fg = colors.grey9 },
           -- NeoTreeIndentMarker = { fg = colors.grey12 },
 
