@@ -1,7 +1,7 @@
 return {
   {
     "catppuccin/nvim",
-    enabled = false,
+    enabled = true,
     lazy = false,
     name = "catppuccin",
     priority = 1000,
@@ -11,7 +11,7 @@ return {
   },
   {
     "rmehri01/onenord.nvim",
-    enabled = true,
+    enabled = false,
     config = function()
       local colors = require("config.utils").colors
       require("onenord").setup({
